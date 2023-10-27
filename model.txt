@@ -1,0 +1,32 @@
+ecc(∞,t0) = u (∞,t0) . (rc /Ec)
+
+rc = contrainte constante estimée sur simulation numérique
+
+	Def R (μm/m) 	Def T (μm/m)
+01	111,99		80,57
+02	116,73		43,19
+03	116,73		43,19
+04	64,93		49,81
+05	64,93		49,81
+06	45,43		6,43
+07	45,43		6,43
+08	69,20		41,70
+09	69,20		41,70
+10	107,92		109,35
+
+Ec = Module d'Young théorique fourni par le client = 31 500 MPa
+ecc(∞,t0) = déformations enregistrées par les capteurs sans correction (prise en compte des déformations mécaniques, de température et du matériaux) 
+u (∞,t0) = ecc(∞,t0) . (Ec/rc)
+
+Eurocodes :
+
+u (∞,t0) = uRH · b(fcm) · b(t0) . bc(t,t0)
+
+uRH = 0.451869 calcul eurocode (a)
+b(fcm) = 2.7619 calcul eurocode (b)
+b(t0) = 0.48845 calcul eurocode (c)
+bc(t,t0) = [(t - 28)/(477.90 + t - 28)]
+t = age du béton
+Date du bétonnage :
+t0 = 05/05/2021
+
